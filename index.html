@@ -56,11 +56,15 @@
 			font-size: 30px; 
 			color: white;
 		}
+		#cButton {
+			transform: translateX(-25%); 
+			margin-left: 40px;
+		}
 		/* Extra small devices (phones, 600px and down) */
 		@media only screen and (max-width: 600px) {
 			input[type="text"] {
 		    margin-left: 10px;
-		    height: 30px;
+		    height: 40px;
 		    overflow: scroll;
 			}
 			h1 {
@@ -70,7 +74,7 @@
 			font-size: 40px;
 			}
 			#textBox {
-				font-size: 20px;
+				font-size: 15px;
 			}
 			.button {
 			font-size: 20px;
@@ -87,6 +91,7 @@
 			height: 500px;
 			box-shadow: 8px 0px 25px pink, -6px 0px 25px red;
 			border-radius: 5%;
+			padding: 0;
 			}
 			.container{
 			text-align: center;
@@ -94,6 +99,10 @@
 			left: 50%;
 			transform: translate(-50%,0%);
 			}
+			#cButton {
+			transform: translateX(-25%); 
+			margin-left: 25px;
+		}
 		}
 
 	</style>
@@ -106,7 +115,7 @@
 		<table class="table">
 			<tr>
 				<td colspan="3"><input type="text" id="textBox" disabled></td>
-				<td><button class="button" onclick="clr()" style="transform: translateX(-25%); margin-left: 40px;">C</button></td>
+				<td><button class="button" id="cButton" onclick="clr()">C</button></td>
 			</tr>
 			<tr>
 				<td><button class="button" onclick="display('1')">1</button></td>
